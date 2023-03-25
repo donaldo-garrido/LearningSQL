@@ -1,7 +1,7 @@
 /*
 Activity (week 2) from the coursera course "Introduction to Structured Query Language (SQL)"
 from University of Michigan.
-*/
+s*/
 
 CREATE DATABASE Activities DEFAULT CHARACTER SET utf8;
 
