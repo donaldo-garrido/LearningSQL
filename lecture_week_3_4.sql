@@ -1,8 +1,8 @@
 /* Example about Music */
 
-CREATE DATABASE Music DEFAULT CHARACTER SET utf8mb4;
+CREATE DATABASE Music_Example DEFAULT CHARACTER SET utf8mb4;
 
-USE Music;  /*(Command line only)*/
+USE Music_Example;  /*(Command line only)*/
 
 CREATE TABLE Artist (
   artist_id INTEGER NOT NULL AUTO_INCREMENT,
