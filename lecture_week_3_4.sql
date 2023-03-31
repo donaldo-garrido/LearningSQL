@@ -1,4 +1,5 @@
-/* Example about Music */
+/* ONE TO MANY - RELATIONSHIPS
+Example about Music */
 
 CREATE DATABASE Music_Example DEFAULT CHARACTER SET utf8mb4;
 
@@ -90,7 +91,11 @@ DROP TABLE Track; DROP TABLE Album; DROP TABLE Genre; DROP TABLE Artist;
 Fresh Database...
 
 
-/* Example about Learning */
+/* ****************************************************
+MANY TO MANY - RELATIONSHIPS
+Example about Learning */
+
+/* YOU SHOULD ADD JUCTION TABLE */
 
 CREATE DATABASE Learning DEFAULT CHARACTER SET utf8mb4;
 
@@ -119,7 +124,7 @@ CREATE TABLE Member (
     CONSTRAINT FOREIGN KEY (course_id) REFERENCES Course (course_id)
        ON DELETE CASCADE ON UPDATE CASCADE,
 
-    PRIMARY KEY (account_id, course_id)
+    PRIMARY KEY (account_id, course_id) /* combination is unique */
 ) ENGINE=InnoDB CHARACTER SET=utf8mb4;
 
 INSERT INTO `Account` (`name`, email) VALUES ('Jane', 'jane@tsugi.org');
